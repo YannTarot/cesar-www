@@ -6,8 +6,14 @@
     <meta description="Les articles de votre wishlist Sézane enfin dans votre panier grâce à César, votre assistant shopping">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32.png">
+
+
+
+    <link rel="icon" type="image/png" href="img/favicon-192.png" sizes="192x192">
 </head>
-<link rel="stylesheet" type="text/css" href="main.css">
+
 
 
 <body>
@@ -15,6 +21,8 @@
     <img class="top-right" src="img/flower-2.png">
     <img class="bottom-left" src="img/flower-3.png">
     <img class="bottom-right" src="img/flower-4.png">
+
+    <img class="logocesarmobile" src="img/title.png" alt="logo-cesar">
 
     <div class="vertically-center">
         <div class="phone-guy">
@@ -24,6 +32,9 @@
             <img class="logocesar" src="img/title.png" alt="logo-cesar">
             <h1>Votre assistant shopping</h1>
             <p><b>Les articles de votre wishlist Sézane enfin dans votre panier...</b></p>
+            <script>var submitted=false;</script> 
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+            onload="if(submitted) {window.location='#';}"></iframe>
             <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe11HBg8JDJp9LjwPhC2w-kDLLQIp_M8xL_OKb7fDssRmL39w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <input type=“text” class="email" placeholder="Votre adresse email" name="entry.1576586574">
                 <input type="submit" class="sendemail" value="C'est parti !" />
@@ -40,7 +51,5 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha256-oKpAiD7qu3bXrWRVxnXLV1h7FlNV+p5YJBIr8LOCFYw=" crossorigin="anonymous"></script>
-
 
 </html>
