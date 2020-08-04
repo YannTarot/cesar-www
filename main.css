@@ -121,3 +121,44 @@ input:focus {
     padding-left: 15px;
     font-size: 18px;
 }
+
+@media screen and (max-width: 574px) {
+    .vertically-center {
+        display: block;
+    }
+    h1,
+    p {
+        text-align: center;
+        width: 350px;
+    }
+    .phone-guy,
+    .cesar-title {
+        width: 100vw;
+    }
+    .illustration {
+        width: 300px;
+    }
+    .logocesar {
+        display: none;
+    }
+    .logocesarmobile {
+        width: 200px;
+        top: 80px;
+        position: absolute;
+        left: 90px;
+    }
+    .form {
+        display: block;
+    }
+    .email,
+    .sendemail {
+        width: 100vw;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
