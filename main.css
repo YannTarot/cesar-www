@@ -138,15 +138,19 @@
                                                                                                                                                     .vertically-center {
                                                                                                                                                         display: block;
                                                                                                                                                         max-height: none;
-                                                                                                                                                        top: 60%;
                                                                                                                                                         padding-bottom: 100px;
                                                                                                                                                         margin-top: 40%;
+                                                                                                                                                    }
+                                                                                                                                                    ::placeholder {
+                                                                                                                                                        color: #919191;
+                                                                                                                                                        font-size: 18px;
+                                                                                                                                                        text-align: center;
                                                                                                                                                     }
                                                                                                                                                     h1,
                                                                                                                                                     p {
                                                                                                                                                         text-align: center;
                                                                                                                                                         width: 100%;
-                                                                                                                                                        margin: auto
+                                                                                                                                                        margin: 20px auto
                                                                                                                                                     }
                                                                                                                                                     .desktop {
                                                                                                                                                         display: none
@@ -159,7 +163,7 @@
                                                                                                                                                     }
                                                                                                                                                     .cesar-title {
                                                                                                                                                         width: 90%;
-                                                                                                                                                        padding-bottom: 150px;
+                                                                                                                                                        margin: 8vh auto 15vh;
                                                                                                                                                     }
                                                                                                                                                     .illustration {
                                                                                                                                                         float: none;
@@ -172,7 +176,7 @@
                                                                                                                                                         display: none;
                                                                                                                                                     }
                                                                                                                                                     .logocesarmobile {
-                                                                                                                                                        width: 280px;
+                                                                                                                                                        width: 60%;
                                                                                                                                                         top: 40px;
                                                                                                                                                         margin: 50px auto;
                                                                                                                                                         display: block;
@@ -182,11 +186,11 @@
                                                                                                                                                     }
                                                                                                                                                     .email {
                                                                                                                                                         width: 100%;
-                                                                                                                                                        margin: 5px;
+                                                                                                                                                        margin: 5px 0;
                                                                                                                                                     }
                                                                                                                                                     .sendemail {
                                                                                                                                                         width: 100%;
-                                                                                                                                                        margin: 5px;
+                                                                                                                                                        margin: 5px 0;
                                                                                                                                                     }
                                                                                                                                                     .top-left {
                                                                                                                                                         width: 15vw;
@@ -206,6 +210,16 @@
                                                                                                                                                     .bottom-left {
                                                                                                                                                         position: absolute;
                                                                                                                                                     }
+                                                                                                                                                }
+                                                                                                                                                @media screen and (max-width: 767px){
+.cesar-title {
+    width: 90%;
+    margin: 8vh auto 8vh;
+}
+.vertically-center {
+    margin-top: 45%;
+}
                                                                                                                                                     @media (max-width: 768px) {}
                                                                                                                                                     @media (min-width: 992px) {}
                                                                                                                                                     @media (min-width: 1200px) {}
+                                                                                                                                                    
