@@ -133,7 +133,18 @@
                                                                                                                                                 .mobile {
                                                                                                                                                     display: none
                                                                                                                                                 }
-                                                                                                                                                
+                                                                                                                                                #merci {
+                                                                                                                                                    display:none;
+                                                                                                                                                    padding-top:170px;
+                                                                                                                                                }
+                                                                                                                                                #merci h1 {
+                                                                                                                                                    font-weight: 600;
+                                                                                                                                                    font-size: 36px;
+                                                                                                                                                    margin: 15px 0px;
+                                                                                                                                                }
+                                                                                                                                                #merci  {
+                                                                                                                                                    font-size: 19px;
+                                                                                                                                                }
                                                                                                                                                 @media screen and (max-width: 768px) {
                                                                                                                                                     .vertically-center {
                                                                                                                                                         display: block;
@@ -154,6 +165,16 @@
                                                                                                                                                     }
                                                                                                                                                     .desktop {
                                                                                                                                                         display: none
+                                                                                                                                                    }
+                                                                                                                                                    #merci {
+                                                                                                                                                        margin: 15vh auto;
+                                                                                                                                                        padding-top: 0px;
+                                                                                                                                                    }
+                                                                                                                                                    #merci h1 {
+                                                                                                                                                        font-size: 50px;
+                                                                                                                                                    }
+                                                                                                                                                    #merci p {
+                                                                                                                                                        font-size: 35px;
                                                                                                                                                     }
                                                                                                                                                     .mobile {
                                                                                                                                                         display: block
