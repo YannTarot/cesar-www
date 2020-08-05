@@ -58,6 +58,20 @@
             }
         }, 1000);
 }
+var email = document.getElementsByClassName("email");
+
+document.addEventListener("DOMContentLoaded", function() {
+    email[0].oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity("Oups, l'email ne semble pas valide");
+            }
+        };
+        email[0].oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
+    
+})
 </script>
 
 </html>
