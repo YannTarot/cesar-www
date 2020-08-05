@@ -108,6 +108,7 @@
                                                                                                                                                     height: 47px;
                                                                                                                                                     border-radius: 6px;
                                                                                                                                                     margin-right: 10px;
+                                                                                                                                                    
                                                                                                                                                 }
                                                                                                                                                 
                                                                                                                                                 .sendemail {
@@ -115,6 +116,7 @@
                                                                                                                                                     border-radius: 6px;
                                                                                                                                                     width: 120px;
                                                                                                                                                     font-size: 18px;
+                                                                                                                                                    -webkit-appearance: none;
                                                                                                                                                 }
                                                                                                                                                 
                                                                                                                                                 input:focus {
@@ -124,6 +126,8 @@
                                                                                                                                                 
                                                                                                                                                 .email {
                                                                                                                                                     font-size: 18px;
+                                                                                                                                                    -webkit-appearance:none;
+                                                                                                                                                    -moz-appearance: none;
                                                                                                                                                 }
                                                                                                                                                 
                                                                                                                                                 .desktop {
@@ -238,8 +242,24 @@
     margin: 8vh auto 8vh;
 }
 .vertically-center {
-    margin-top: 45%;
+    margin-top: 0px;
+    top: 0;
+    transform: translateY(0);
+
 }
+input {
+    -webkit-appearance: none;
+    width: 100%;
+    text-align:center;
+}
+input::placeholder {
+    text-align:center;
+}
+input.email{
+    box-sizing: border-box;
+  width: 100%;
+}
+                                                                                                                                                }
                                                                                                                                                     @media (max-width: 768px) {}
                                                                                                                                                     @media (min-width: 992px) {}
                                                                                                                                                     @media (min-width: 1200px) {}

@@ -26,7 +26,7 @@
             <h1>Merci !</h1>
             <p>César vous recontactera bientôt !</p>
         </div>
-        <div class="cesar-title">
+        <div class="cesar-title" id="hide-when-clicked">
             <img class="logocesar" src="img/title.png" alt="logo-cesar">
             <h1>Votre assistant shopping</h1>
             <p><b>Les articles de votre wishlist Sézane enfin dans votre panier...</b></p>
@@ -37,7 +37,7 @@
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe11HBg8JDJp9LjwPhC2w-kDLLQIp_M8xL_OKb7fDssRmL39w/formResponse"
                 method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <input type=“text” class="email" placeholder="Votre adresse email" name="entry.1576586574">
-                <input type="submit" class="sendemail" value="C'est parti !" />
+                <input type="submit" id="send-button"  class="sendemail" onclick="myFunction()" value="C'est parti !" />
             </form>
         </div>
         <img class=" mobile bottom-left" src="img/flower-3.png">
@@ -45,18 +45,19 @@
     </div>
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 <script>
-    $(".sendemail").click(function () {
+    function myFunction() {
+        var x = document.getElementById("merci");
+        var y = document.getElementById("hide-when-clicked");
         setTimeout(function () {
             if (submitted == false) {
             } else {
-                $('#merci').show()
-                $('.cesar-title').hide()
+                x.style.display = "block";
+                y.style.display = "none";
             }
         }, 1000);
-    });
+}
 </script>
 
 </html>
