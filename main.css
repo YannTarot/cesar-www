@@ -244,9 +244,8 @@
 }
 .vertically-center {
     margin-top: 0px;
-    top: 0;
+    top: 150px;
     transform: translateY(0);
-
 }
 input {
     -webkit-appearance: none;
@@ -258,7 +257,7 @@ input::placeholder {
 }
 input.email{
     box-sizing: border-box;
-  width: 100%;
+    width: 100%;
 }
                                                                                                                                                 }
                                                                                                                                                     @media (max-width: 768px) {}
