@@ -259,6 +259,10 @@ input.email{
     box-sizing: border-box;
     width: 100%;
 }
+.error-message {
+    text-align: center;
+    color: red
+}
                                                                                                                                                 }
                                                                                                                                                     @media (max-width: 768px) {}
                                                                                                                                                     @media (min-width: 992px) {}

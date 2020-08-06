@@ -72,6 +72,61 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     
 })
+function replaceValidationUI( form ) {
+    var error = document.getElementsByClassName('error-message')
+
+    while(error.length > 0){
+        error[0].parentNode.removeChild(error[0]);
+    }
+    // Suppress the default bubbles
+    form.addEventListener( "invalid", function( event ) {
+        event.preventDefault();
+    }, true );
+
+    // Support Safari, iOS Safari, and the Android browser—each of which do not prevent
+    // form submissions by default
+    form.addEventListener( "submit", function( event ) {
+        if ( !this.checkValidity() ) {
+            event.preventDefault();
+        }
+    });
+
+    var submitButton = form.querySelector( "button:not([type=button]), input[type=submit]" );
+    submitButton.addEventListener( "click", function( event ) {
+     
+        var invalidFields = form.querySelectorAll( ":invalid" ),
+            // errorMessages = document.getElementsByClassName( ".error-message" ),
+            parent;
+
+        // Remove any existing messages
+        // for ( var i = 0; i < errorMessages.length; i++ ) {
+        //     console.log('je passe ici')
+        //     errorMessages[ i ].parentNode.removeChild( errorMessages[ i ] );
+        // }
+        while(error.length > 0){
+        error[0].parentNode.removeChild(error[0]);
+    }
+
+
+        for ( var i = 0; i < invalidFields.length; i++ ) {
+            parent = invalidFields[ i ].parentNode;
+            parent.insertAdjacentHTML( "beforebegin", "<div class='error-message'>Oups, l'email ne semble pas valide</div>" );
+    
+        }
+
+        // If there are errors, give focus to the first invalid field
+        if ( invalidFields.length > 0 ) {
+            invalidFields[ 0 ].focus();
+        }
+    
+    });
+}
+
+// Replace the validation UI for all forms
+var forms = document.querySelectorAll( "form" );
+for ( var i = 0; i < forms.length; i++ ) {
+    replaceValidationUI( forms[ i ] );
+}
 </script>
 
 </html>
